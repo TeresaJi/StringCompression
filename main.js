@@ -22,6 +22,7 @@ var app = new Vue({
                     str.splice(t+1,1);
                     L = L - 1;
                 }else{
+                    str[t] = str[t].charAt(0) + count;
                     count = 1;
                     t = t + 1;
                 }
